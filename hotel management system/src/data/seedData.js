@@ -1,0 +1,48 @@
+export const roomSeed = [
+  {
+    id: "standard-101",
+    name: "Standard Room",
+    category: "Standard",
+    price: 999,
+    guests: 2,
+    ac: false,
+    available: true,
+    description: "A simple, clean room for a comfortable overnight stay.",
+    image: "",
+  },
+  {
+    id: "deluxe-201",
+    name: "Deluxe Room",
+    category: "Deluxe",
+    price: 1499,
+    guests: 2,
+    ac: true,
+    available: true,
+    description: "A more spacious room with AC and upgraded comfort.",
+    image: "",
+  },
+  {
+    id: "family-301",
+    name: "Family Room",
+    category: "Family",
+    price: 2199,
+    guests: 4,
+    ac: true,
+    available: true,
+    description: "Flexible room layout for families and small groups.",
+    image: "",
+  },
+  {
+    id: "suite-401",
+    name: "Signature Suite",
+    category: "Suite",
+    price: 2999,
+    guests: 4,
+    ac: true,
+    available: true,
+    description: "The premium stay option for guests who want extra space.",
+    image: "",
+  },
+];
+
+export const roomCategories = ["All", "Standard", "Deluxe", "Family", "Suite"];

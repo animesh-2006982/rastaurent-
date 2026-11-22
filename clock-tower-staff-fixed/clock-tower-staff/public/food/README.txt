@@ -1,0 +1,1 @@
+Food images can be added here if you prefer local assets.

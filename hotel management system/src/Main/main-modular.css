@@ -1,0 +1,106 @@
+.modular-section {
+  padding: 80px max(20px, 5vw);
+}
+.modular-eyebrow {
+  color: #ff6b4a;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .18em;
+}
+.modular-section h2 {
+  margin: 10px 0;
+  font: 700 clamp(38px, 5vw, 64px)/.95 Georgia, serif;
+  color: #4c1504;
+}
+.modular-section p {
+  max-width: 640px;
+  color: #806b63;
+  line-height: 1.7;
+}
+.modular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.modular-food-card {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+  cursor: pointer;
+}
+.modular-food-image {
+  height: 220px;
+  background: #f0ddd3;
+  display: grid;
+  place-items: center;
+}
+.modular-food-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modular-food-card > div:last-child {
+  padding: 16px;
+}
+.modular-food-card span {
+  color: #ff6b4a;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+.modular-food-card h3 {
+  margin: 8px 0;
+  font: 700 23px Georgia, serif;
+  color: #4c1504;
+}
+.modular-food-card p {
+  font-size: 10px;
+}
+.modular-food-card strong {
+  color: #ff6b4a;
+}
+.modular-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.modular-pills button,
+.modular-actions button {
+  min-height: 42px;
+  border: 1px solid rgba(76,21,4,.10);
+  border-radius: 999px;
+  background: #fff;
+  color: #4c1504;
+  padding: 0 14px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 900;
+}
+.modular-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.modular-actions button:first-child,
+.modular-rooms-preview button,
+.modular-final-cta button:first-child {
+  border-color: #ff6b4a;
+  background: #ff6b4a;
+  color: #fff;
+}
+.modular-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.modular-review-grid article {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.75);
+}
+@media (max-width: 800px) {
+  .modular-grid,
+  .modular-review-grid {
+    grid-template-columns: 1fr;
+  }
+}

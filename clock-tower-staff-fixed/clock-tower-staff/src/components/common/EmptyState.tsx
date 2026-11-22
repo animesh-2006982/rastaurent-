@@ -1,0 +1,1 @@
+export default function EmptyState({title="Nothing here yet"}:{title?:string}){return <div className="empty-state">{title}</div>}

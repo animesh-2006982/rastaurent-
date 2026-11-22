@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+.digital-menu-page {
+  min-height: 100vh;
+  padding: 70px 0;
+  background: #fff7f2;
+  color: #4c1504;
+  font-family: "DM Sans", sans-serif;
+}
+
+.digital-menu-wrap {
+  width: min(1200px, calc(100% - 30px));
+  margin: 0 auto;
+}
+
+.digital-menu-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.digital-menu-heading > div > span,
+.digital-menu-feature span {
+  color: #ff6b4a;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .2em;
+}
+
+.digital-menu-heading h1 {
+  margin: 9px 0;
+  font: 700 clamp(46px, 6vw, 78px)/.95 "Playfair Display", Georgia, serif;
+}
+
+.digital-menu-heading p {
+  max-width: 600px;
+  margin: 0;
+  color: #8b766d;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.digital-menu-heading > button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #ff6b4a;
+  color: #fff;
+  font-weight: 900;
+  font-size: 11px;
+}
+
+.digital-menu-tabs {
+  margin: 30px 0 18px;
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.digital-menu-tabs button,
+.digital-menu-tools button {
+  min-height: 40px;
+  border: 1px solid rgba(76,21,4,.10);
+  border-radius: 999px;
+  background: #fff;
+  color: #5f382b;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.digital-menu-tabs button.active,
+.digital-menu-tools button.active {
+  border-color: #ff6b4a;
+  background: #ff6b4a;
+  color: #fff;
+}
+
+.digital-menu-tools {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 11px;
+}
+
+.digital-menu-tools input {
+  min-height: 48px;
+  border: 1px solid rgba(76,21,4,.10);
+  border-radius: 13px;
+  padding: 0 13px;
+  outline: 0;
+  background: #fff;
+}
+
+.digital-menu-tools > div {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.digital-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.digital-menu-card {
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.85);
+  border-radius: 19px;
+  background: rgba(255,255,255,.75);
+  box-shadow: 0 18px 45px rgba(76,21,4,.07);
+  cursor: pointer;
+}
+
+.digital-menu-card-image {
+  aspect-ratio: 1.15;
+  overflow: hidden;
+  background: #f2ddd2;
+}
+
+.digital-menu-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.digital-menu-card:hover img {
+  transform: scale(1.05);
+}
+
+.digital-menu-card-body {
+  padding: 15px;
+}
+
+.digital-menu-card-body span {
+  color: #ff6b4a;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.digital-menu-card-body h2 {
+  margin: 7px 0 5px;
+  font: 700 23px "Playfair Display", Georgia, serif;
+}
+
+.digital-menu-card-body p {
+  margin: 0 0 10px;
+  min-height: 37px;
+  color: #8b766d;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.digital-menu-card-body strong {
+  color: #ff6b4a;
+  font-size: 14px;
+}
+
+.digital-menu-feature {
+  min-height: 330px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  border: 1px solid rgba(255,255,255,.85);
+  border-radius: 25px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 20px 65px rgba(76,21,4,.08);
+}
+
+.digital-menu-qr {
+  width: 170px;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.digital-menu-feature h2 {
+  margin: 9px 0;
+  font: 700 39px "Playfair Display", Georgia, serif;
+}
+
+.digital-menu-feature p {
+  max-width: 580px;
+  color: #8b766d;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.digital-menu-ar > svg {
+  color: #ff6b4a;
+}
+
+@media (max-width: 900px) {
+  .digital-menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .digital-menu-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .digital-menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-menu-feature {
+    padding: 24px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .digital-menu-feature h2 {
+    font-size: 31px;
+  }
+}

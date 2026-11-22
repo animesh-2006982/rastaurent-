@@ -1,0 +1,1 @@
+export default function OrderStats(){return <div className="order-stats"><div><span className="dot orange"/>Dine In <b>58%</b></div><div><span className="dot yellow"/>Takeaway <b>25%</b></div><div><span className="dot blue"/>Delivery <b>17%</b></div></div>}

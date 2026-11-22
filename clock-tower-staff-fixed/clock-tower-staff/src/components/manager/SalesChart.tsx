@@ -1,0 +1,1 @@
+export default function SalesChart(){const bars=[28,45,34,55,63,50,72,60,85,78,94,100];return <div className="chart"><div className="chart-bars">{bars.map((h,i)=><div key={i} style={{height:`${h}%`}}><span/></div>)}</div><div className="chart-labels">{["8AM","10AM","12PM","2PM","4PM","6PM","8PM"].map(x=><span key={x}>{x}</span>)}</div></div>}

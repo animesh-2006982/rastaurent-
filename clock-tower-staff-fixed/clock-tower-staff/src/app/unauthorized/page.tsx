@@ -1,0 +1,1 @@
+import Link from "next/link"; export default function Unauthorized(){return <main className="login-page"><div className="login-card"><h1>Access Denied</h1><p>Your staff role does not have permission for this section.</p><Link className="ct-btn ct-btn-primary" href="/pos">Back to POS</Link></div></main>}

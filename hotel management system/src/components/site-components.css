@@ -1,0 +1,346 @@
+/* Shared public components */
+.public-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 248, 244, .84);
+  border-bottom: 1px solid rgba(76,21,4,.08);
+  backdrop-filter: blur(16px);
+}
+
+.public-site-header-inner {
+  width: min(1280px, calc(100% - 32px));
+  min-height: 74px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.public-brand-button,
+.public-cart-action,
+.public-order-action,
+.public-login-action,
+.public-desktop-nav button,
+.public-mobile-menu,
+.public-mobile-drawer button,
+.public-footer-inner button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.public-brand-button {
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4c1504;
+  text-align: left;
+}
+
+.public-brand-button img,
+.public-brand-mark {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.public-brand-button img {
+  padding: 4px;
+  background: #fff;
+  border: 1px solid rgba(76,21,4,.08);
+}
+
+.public-brand-mark {
+  display: grid;
+  place-items: center;
+  background: #ff6b4a;
+  color: #fff;
+  font: 700 17px Georgia, serif;
+}
+
+.public-brand-button strong,
+.public-brand-button small {
+  display: block;
+}
+
+.public-brand-button strong {
+  font: 700 18px Georgia, serif;
+}
+
+.public-brand-button small {
+  margin-top: 3px;
+  color: #977e73;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .16em;
+}
+
+.public-desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.public-desktop-nav button {
+  border: 0;
+  background: transparent;
+  color: #63372a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.public-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.public-cart-action,
+.public-order-action,
+.public-login-action {
+  min-height: 40px;
+  border-radius: 999px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.public-cart-action,
+.public-login-action {
+  border: 1px solid rgba(76,21,4,.10);
+  background: #fff;
+  color: #4c1504;
+}
+
+.public-order-action {
+  border: 0;
+  background: #ff6b4a;
+  color: #fff;
+  box-shadow: 0 11px 25px rgba(255,107,74,.22);
+}
+
+.public-mobile-menu,
+.public-mobile-drawer {
+  display: none;
+}
+
+.public-site-footer {
+  padding: 65px 0 20px;
+  background: #100806;
+  color: rgba(255,248,244,.85);
+}
+
+.public-footer-inner {
+  width: min(1280px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+  gap: 35px;
+}
+
+.public-footer-brand {
+  display: flex;
+  gap: 12px;
+}
+
+.public-footer-mark {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #ff6b4a;
+  color: #fff;
+  font: 700 18px Georgia, serif;
+}
+
+.public-footer-brand h3 {
+  margin: 0;
+  font: 700 24px Georgia, serif;
+  color: #fff;
+}
+
+.public-footer-brand p,
+.public-footer-inner p {
+  color: rgba(255,248,244,.52);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.public-footer-inner > div:not(.public-footer-brand) {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.public-footer-inner > div > span {
+  color: #ff8a70;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .19em;
+}
+
+.public-footer-inner button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: rgba(255,248,244,.64);
+  text-align: left;
+  font-size: 11px;
+}
+
+.public-footer-bottom {
+  width: min(1280px, calc(100% - 32px));
+  margin: 35px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: rgba(255,248,244,.40);
+  font-size: 9px;
+}
+
+.public-button {
+  min-height: 45px;
+  border-radius: 999px;
+  padding: 0 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.public-button-primary {
+  border: 0;
+  background: #ff6b4a;
+  color: #fff;
+}
+
+.public-button-secondary {
+  border: 1px solid rgba(76,21,4,.10);
+  background: #fff;
+  color: #4c1504;
+}
+
+.public-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(20, 8, 4, .45);
+  backdrop-filter: blur(10px);
+}
+
+.public-modal {
+  width: min(720px, 100%);
+  max-height: min(88vh, 820px);
+  overflow: auto;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 24px;
+  background: rgba(255,251,248,.96);
+  box-shadow: 0 30px 100px rgba(0,0,0,.22);
+}
+
+.public-modal-header {
+  min-height: 64px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(76,21,4,.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.public-modal-header h2 {
+  margin: 0;
+  color: #4c1504;
+  font: 700 25px Georgia, serif;
+}
+
+.public-modal-header button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(76,21,4,.08);
+  border-radius: 50%;
+  background: #fff;
+  color: #4c1504;
+}
+
+.public-modal-body {
+  padding: 20px;
+}
+
+@media (max-width: 850px) {
+  .public-desktop-nav,
+  .public-header-actions {
+    display: none;
+  }
+
+  .public-mobile-menu {
+    margin-left: auto;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(76,21,4,.10);
+    border-radius: 12px;
+    background: #fff;
+    color: #4c1504;
+  }
+
+  .public-mobile-drawer {
+    display: grid;
+    width: min(100%, 420px);
+    margin-left: auto;
+    padding: 9px 14px 14px;
+    border-top: 1px solid rgba(76,21,4,.08);
+    background: rgba(255,248,244,.96);
+    box-shadow: 0 18px 40px rgba(76,21,4,.10);
+  }
+
+  .public-mobile-drawer button {
+    min-height: 46px;
+    border: 0;
+    border-bottom: 1px solid rgba(76,21,4,.07);
+    background: transparent;
+    color: #4c1504;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .public-footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .public-site-header-inner {
+    width: min(100% - 20px, 1280px);
+    min-height: 66px;
+  }
+
+  .public-brand-button strong {
+    font-size: 17px;
+  }
+
+  .public-footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .public-footer-bottom {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,1 @@
+export default function KitchenTimer({text}:{text:string}){return <span className="kitchen-time">{text}</span>}
